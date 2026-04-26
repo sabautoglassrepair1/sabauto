@@ -32,6 +32,14 @@ body {
     color: white;
 }
 
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;   /* makes it round like profile */
+    object-fit: cover;
+    border: 2px solid #00a082;
+}
+
 .logo span {
     font-weight: bold;
 }
