@@ -24,24 +24,8 @@ body {
     top: 0;
     z-index: 1000;
 }
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-}
-
-.logo img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;   /* makes it round like profile */
-    object-fit: cover;
-    border: 2px solid #00a082;
-}
-
 .logo span {
-    font-weight: bold;
+    color: #00a082;
 }
 nav a {
     color: white;
