@@ -25,10 +25,16 @@ body {
     z-index: 1000;
 }
 
-.logo span {
-    color: #00a082;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
 }
 
+.logo span {
+    font-weight: bold;
+}
 nav a {
     color: white;
     margin-left: 15px;
