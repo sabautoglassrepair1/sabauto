@@ -223,54 +223,58 @@ button {
     border-radius: 50px;
     text-decoration: none;
 }
-/* FOLLOW US SECTION */
+/* =========================
+   FOLLOW US SECTION (PREMIUM)
+========================= */
+
 .follow-us {
-    background: #111;
-    color: white;
     text-align: center;
     padding: 50px 20px;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: white;
 }
 
 .follow-us h2 {
+    font-size: 24px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-/* ICON CONTAINER */
 .follow-icons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
-/* EACH LINK */
 .follow-icons a {
     display: flex;
     align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    background: #222;
-    padding: 15px 25px;
+    gap: 8px;
+    padding: 12px 18px;
     border-radius: 10px;
+    text-decoration: none;
     color: white;
-    font-size: 18px;
-    transition: 0.3s;
+    background: #222;
+    transition: 0.3s ease;
+    font-size: 14px;
 }
 
-/* HOVER EFFECT */
+/* Hover effect */
 .follow-icons a:hover {
-    transform: scale(1.1);
+    transform: translateY(-5px);
+    background: #00c896;
 }
 
-/* ICON COLORS */
-.fa-instagram {
+/* Instagram specific */
+.follow-icons a .fa-instagram {
     color: #E1306C;
 }
 
-.fa-x-twitter {
-    color: #fff;
+/* Twitter/X */
+.follow-icons a .fa-x-twitter {
+    color: #1DA1F2;
 }
-
 /* FOOTER */
 footer {
     background: #000;
