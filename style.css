@@ -1,158 +1,128 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+/* =========================
+   GLOBAL STYLES
+========================= */
 
-/* BODY */
 body {
-    background: #0f172a;
-    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+    color: #222;
 }
 
-/* HEADER */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   HEADER (PREMIUM STYLE)
+========================= */
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background: #000;
-    color: white;
+    padding: 15px 40px;
+    background: #0f0f0f;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.logo span {
-    color: #00a082;
+.logo-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .logo img {
     height: 120px;
     width: auto;
 }
-nav a {
+
+.logo-text span {
+    color: #00c896;
+}
+
+.header nav a {
     color: white;
+    text-decoration: none;
     margin-left: 15px;
-    text-decoration: none;
+    font-weight: 500;
 }
 
-/* HERO */
+.header nav a:hover {
+    color: #00c896;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero {
-    position: relative;
-    height: 90vh;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    background: linear-gradient(135deg, #111, #222);
     color: white;
-    overflow: hidden;
 }
 
-/* VIDEO */
-.hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -2;
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-/* OVERLAY */
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+.hero p {
+    opacity: 0.8;
+    margin-bottom: 20px;
 }
 
-/* HERO CONTENT */
-.hero-content h1 {
-    font-size: 3rem;
-}
-
-.hero-content p {
-    margin-top: 10px;
-}
-
-/* BUTTON */
 .btn {
-    display: inline-block;
-    margin-top: 15px;
+    background: #00c896;
     padding: 12px 25px;
-    background: #00a082;
+    border-radius: 8px;
     color: white;
-    border-radius: 30px;
     text-decoration: none;
-    transition: 0.3s;
+    margin: 5px;
+    display: inline-block;
 }
 
-.btn:hover {
-    background: #008a6f;
-    transform: scale(1.05);
-}
+/* =========================
+   SERVICES GRID
+========================= */
 
-/* WHATSAPP BUTTON */
-.whatsapp-btn {
-    background: #25D366;
-    margin-left: 10px;
-}
-
-/* SECTION */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-    background: #ffffff;
-}
-
-/* GRID */
 .grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
-/* CARD */
 .card {
-    width: 260px;
-    background: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card h3,
-.card p {
-    padding: 10px;
-}
-
-/* REVIEWS */
-.reviews-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.review-card {
-    width: 260px;
     background: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
 }
 
-/* FORM */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   BOOKING FORM
+========================= */
+
 form {
     max-width: 400px;
     margin: auto;
@@ -161,27 +131,60 @@ form {
     gap: 10px;
 }
 
-input,
-select,
-textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 button {
-    padding: 10px;
-    background: #00a082;
+    background: #00c896;
     color: white;
+    padding: 12px;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-/* SOCIAL FLOAT */
+/* =========================
+   FOLLOW US SECTION
+========================= */
+
+.follow-us {
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.follow-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.follow-icons a {
+    color: white;
+    text-decoration: none;
+    background: #222;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.follow-icons a:hover {
+    transform: scale(1.05);
+    background: #00c896;
+}
+
+/* =========================
+   SOCIAL FLOAT ICONS
+========================= */
+
 .social-float {
     position: fixed;
-    top: 40%;
+    top: 50%;
     left: 10px;
     display: flex;
     flex-direction: column;
@@ -189,134 +192,62 @@ button {
 }
 
 .social-float a {
-    background: #222;
+    background: #111;
     color: white;
     padding: 10px;
     border-radius: 50%;
+    text-align: center;
 }
 
-/* SOCIAL SECTION */
-.social-icons a {
-    margin: 10px;
-    font-size: 25px;
-}
+/* =========================
+   WHATSAPP FLOAT BUTTON
+========================= */
 
-.fa-instagram {
-    color: #E1306C;
-}
-
-.fa-x-twitter {
-    color: #000;
-}
-
-/* ABOUT */
-.about {
-    background: #fff;
-}
-
-.feature-box {
-    margin: 10px;
-    font-weight: bold;
-}
-
-/* WHATSAPP FLOAT BUTTON */
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25D366;
     color: white;
-    padding: 15px;
+    padding: 12px 15px;
     border-radius: 50px;
     text-decoration: none;
 }
 
-/* FOLLOW US SECTION */
-.follow-us {
-    background: #111111;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
+/* =========================
+   FOOTER
+========================= */
 
-.follow-us h2 {
-    margin-bottom: 20px;
-}
-
-/* ICON CONTAINER */
-.follow-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-/* EACH LINK */
-.follow-icons a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    background: #222222;
-    padding: 15px 25px;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-/* HOVER EFFECT */
-.follow-icons a:hover {
-    transform: scale(1.1);
-}
-
-/* ICON COLORS */
-.fa-instagram {
-    color: #E1306C;
-}
-
-.fa-x-twitter {
-    color: #fff;
-}
-
-/* FOOTER */
 footer {
-    background: #000;
-    color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    background: #111;
+    color: white;
 }
 
 /* =========================
-   COOKIE BANNER (PREMIUM)
+   COOKIE BANNER (PREMIUM STYLE)
 ========================= */
 
 .cookie-banner {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
     background: #111;
     color: white;
-    padding: 20px 20px;
-
+    padding: 15px 20px;
+    border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    transform: translateY(100%);
-    transition: 0.4s ease;
-
     z-index: 9999;
-}
-
-.cookie-banner.show {
-    transform: translateY(0);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .cookie-text {
-    max-width: 60%;
     font-size: 14px;
+    opacity: 0.9;
 }
 
 .cookie-actions {
@@ -325,37 +256,23 @@ footer {
 }
 
 .cookie-actions .btn {
-    padding: 8px 16px;
-    border-radius: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 .cookie-actions .accept {
-    background: #25D366;
+    background: #00c896;
+    color: white;
 }
 
 .cookie-actions .reject {
-    background: transparent;
-    border: 1px solid white;
+    background: #444;
+    color: white;
 }
 
-/* MOBILE */
-@media(max-width:768px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cookie-banner {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .cookie-text {
-        max-width: 100%;
-    }
+.cookie-banner.hide {
+    display: none;
 }
