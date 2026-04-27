@@ -24,7 +24,6 @@ body {
     top: 0;
     z-index: 1000;
 }
-
 .logo span {
     color: #00a082;
     height: 80px;
@@ -125,7 +124,7 @@ nav a {
 .card {
     width: 260px;
     background: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -134,8 +133,7 @@ nav a {
     width: 100%;
 }
 
-.card h3,
-.card p {
+.card h3, .card p {
     padding: 10px;
 }
 
@@ -163,9 +161,7 @@ form {
     gap: 10px;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -187,14 +183,14 @@ button {
     left: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .social-float a {
     background: #222;
     color: white;
     padding: 10px;
-    border-radius: 70%;
+    border-radius: 50%;
 }
 
 /* SOCIAL SECTION */
@@ -203,13 +199,10 @@ button {
     font-size: 25px;
 }
 
-.fa-instagram {
-    color: #E1306C;
-}
-
-.fa-x-twitter {
-    color: #000;
-}
+.fa-instagram { color: #E1306C; }
+.fa-x-twitter { color: #000; }
+.fa-facebook { color: #1877F2; }
+.fa-tiktok { color: #000; }
 
 /* ABOUT */
 .about {
@@ -233,54 +226,6 @@ button {
     text-decoration: none;
 }
 
-/* FOLLOW US SECTION */
-.follow-us {
-    background: #111111;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.follow-us h2 {
-    margin-bottom: 20px;
-}
-
-/* ICON CONTAINER */
-.follow-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-/* EACH LINK */
-.follow-icons a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    background: #222222;
-    padding: 15px 25px;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-/* HOVER EFFECT */
-.follow-icons a:hover {
-    transform: scale(1.1);
-}
-
-/* ICON COLORS */
-.fa-instagram {
-    color: #E1306C;
-}
-
-.fa-x-twitter {
-    color: #fff;
-}
-
 /* FOOTER */
 footer {
     background: #000;
@@ -300,7 +245,7 @@ footer {
     width: 100%;
     background: #111;
     color: white;
-    padding: 20px 20px;
+    padding: 15px 20px;
 
     display: flex;
     justify-content: space-between;
