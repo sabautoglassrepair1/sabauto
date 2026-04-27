@@ -201,8 +201,6 @@ button {
 
 .fa-instagram { color: #E1306C; }
 .fa-x-twitter { color: #000; }
-.fa-facebook { color: #1877F2; }
-.fa-tiktok { color: #000; }
 
 /* ABOUT */
 .about {
@@ -224,6 +222,53 @@ button {
     padding: 15px;
     border-radius: 50px;
     text-decoration: none;
+}
+/* FOLLOW US SECTION */
+.follow-us {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.follow-us h2 {
+    margin-bottom: 20px;
+}
+
+/* ICON CONTAINER */
+.follow-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* EACH LINK */
+.follow-icons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: #222;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.follow-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* ICON COLORS */
+.fa-instagram {
+    color: #E1306C;
+}
+
+.fa-x-twitter {
+    color: #fff;
 }
 
 /* FOOTER */
