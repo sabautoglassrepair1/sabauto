@@ -24,8 +24,14 @@ body {
     top: 0;
     z-index: 1000;
 }
+
 .logo span {
     color: #00a082;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
 }
 nav a {
     color: white;
